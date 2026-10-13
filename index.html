@@ -23,14 +23,14 @@
 </head>
 <body>
 
-  <!-- 1. 未ログイン時画面 -->
+  <!-- 1. 未ログイン時画面（ログインしないと使えない状態） -->
   <div id="login-section" class="card">
     <h2>学校図書室 貸出管理システム</h2>
-    <p>システムを利用するには Google アカウントでのログインが必要です。</p>
+    <p>ご利用には Google アカウントでのログインが必要です。</p>
     <button id="btn-login">Google アカウントでログイン</button>
   </div>
 
-  <!-- 2. ログイン後画面 -->
+  <!-- 2. ログイン後メイン画面 -->
   <div id="app-section" class="hidden">
     <div class="header-bar">
       <span>ようこそ <strong><span id="user-display-name"></span></strong> さん</span>
@@ -68,7 +68,7 @@
       </form>
     </div>
 
-    <!-- 記録一覧 display -->
+    <!-- データ一覧表示 -->
     <div class="card">
       <h3>貸出・返却 履歴一覧</h3>
       <table>
